@@ -18,20 +18,21 @@ public class BGShift : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D col)
     {
-        float width = ((BoxCollider2D)col).size.x;
+        //float width = ((BoxCollider2D)col).size.x;
+        float width = 7f;
         Vector3 pos = col.transform.position;
         
         if (col.gameObject.tag=="BG1")
         {
-            pos.x = pos.x + width * 1.95f;
-            pos.y = 1.73f;
+            pos.x = pos.x + 41f;
+            //pos.y = 1.73f;
             
             col.transform.position = pos;
         }
         if (col.gameObject.tag == "BG2")
         {
-            pos.x = pos.x + width * 1.95f;
-            pos.y = 1.73f;
+            pos.x = pos.x + 41f;//width * 2f;
+            //pos.y = 1.73f;
             col.transform.position = pos;
            
         }

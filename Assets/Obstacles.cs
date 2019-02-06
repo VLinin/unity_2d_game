@@ -29,8 +29,8 @@ public class Obstacles : MonoBehaviour
         type = Random.Range(0, ob.Length);
         GameObject clone = (GameObject)Instantiate(ob[type], transform.position,Quaternion.identity);
         
-        clone.AddComponent<CapsuleCollider2D>();
-        clone.GetComponent<CapsuleCollider2D>().isTrigger=true;
+        clone.AddComponent<PolygonCollider2D>();
+        clone.GetComponent<PolygonCollider2D>().isTrigger=true;
         Destroy(clone, 6);
         switch (type)
         {
@@ -48,9 +48,6 @@ public class Obstacles : MonoBehaviour
                 break;
             case 4:
                 clone.name = "Type4";
-                break;
-            case 5:
-                clone.name = "Type5";
                 break;
         }
         Debug.Log(PlayerPrefs.GetFloat("res"));
