@@ -17,7 +17,7 @@ public class DoodleCam : MonoBehaviour
         position = who.position;
         position.z = -10f;
         position.x = 0.02f;
-        transform.position = Vector3.Lerp(transform.position, position, 1f * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, position, 2.7f * Time.deltaTime);
         if (who.position.y < (transform.position.y - 12))
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");

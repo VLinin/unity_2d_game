@@ -55,11 +55,14 @@
   <ItemGroup>
      <Compile Include="Assets\BGShift.cs" />
      <Compile Include="Assets\cam.cs" />
+     <Compile Include="Assets\destroyPlatform.cs" />
      <Compile Include="Assets\DoodleCam.cs" />
      <Compile Include="Assets\jump.cs" />
+     <Compile Include="Assets\kamen.cs" />
      <Compile Include="Assets\Obstacles.cs" />
      <Compile Include="Assets\Over.cs" />
      <Compile Include="Assets\platform.cs" />
+     <Compile Include="Assets\Secondlvlend.cs" />
      <Compile Include="Assets\tREX.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/unityGame/T_REX/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
