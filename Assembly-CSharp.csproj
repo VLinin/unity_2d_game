@@ -54,6 +54,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BGShift.cs" />
+     <Compile Include="Assets\bos\Scripts\Boss.cs" />
+     <Compile Include="Assets\bos\Scripts\DeathBehavior.cs" />
+     <Compile Include="Assets\bos\Scripts\IdleBehavior.cs" />
+     <Compile Include="Assets\bos\Scripts\introBehavior.cs" />
+     <Compile Include="Assets\bos\Scripts\JumpBehavior.cs" />
+     <Compile Include="Assets\bos\Scripts\Player.cs" />
+     <Compile Include="Assets\bos\Scripts\Projectile.cs" />
+     <Compile Include="Assets\bos\Scripts\Weapon.cs" />
      <Compile Include="Assets\cam.cs" />
      <Compile Include="Assets\destroyPlatform.cs" />
      <Compile Include="Assets\DoodleCam.cs" />

@@ -12,7 +12,7 @@ public class kamen : MonoBehaviour
     void Start()
     {
         position = who.position;
-        position.y = position.y + 6;
+        position.y = position.y + 8;
         transform.position = position;
         ObstacleMaker();
     }
@@ -21,7 +21,7 @@ public class kamen : MonoBehaviour
     void Update()
     {
         position = who.position;
-        position.y = position.y+6;
+        position.y = position.y+8;
         transform.position = Vector3.Lerp(transform.position, position, 1f * Time.deltaTime);
     }
 
