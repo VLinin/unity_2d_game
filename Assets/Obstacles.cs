@@ -53,7 +53,7 @@ public class Obstacles : MonoBehaviour
         Debug.Log(PlayerPrefs.GetFloat("res"));
         if (PlayerPrefs.GetFloat("res") > 250)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Doodle");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Stage2");
         }
             if (PlayerPrefs.GetFloat("res") > 150 && tekRes == 0)
         {

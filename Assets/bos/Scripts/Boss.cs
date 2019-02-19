@@ -31,6 +31,7 @@ public class Boss : MonoBehaviour {
 
         if (health <= 0) {
             anim.SetTrigger("death");
+            Invoke("End",2.5f);
         }
 
         // give the player some time to recover before taking more damage !
@@ -40,7 +41,9 @@ public class Boss : MonoBehaviour {
 
         healthBar.value = health;
     }
-
+    public void End() {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Final");
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         // deal the player damage ! 
@@ -48,9 +51,9 @@ public class Boss : MonoBehaviour {
             if (timeBtwDamage <= 0) {
                 camAnim.SetTrigger("shake");
                 //other.GetComponent<Player>().health -= damage;
-                Time.timeScale = 0;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Fail");
                 over = true;
-                print("zadel");
+                
             }
         }
        

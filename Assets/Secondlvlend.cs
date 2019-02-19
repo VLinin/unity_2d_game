@@ -21,8 +21,8 @@ public class Secondlvlend : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        Time.timeScale = 0;
-        over = true;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Stage3");
+
     }
 
     void OnGUI()

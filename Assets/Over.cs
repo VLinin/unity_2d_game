@@ -16,7 +16,7 @@ public class Over : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -24,51 +24,57 @@ public class Over : MonoBehaviour
         switch (collider.name)
         {
             case "Type0":
-                Time.timeScale = 0;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Fail");
+               // Time.timeScale = 0;
                 over = true;
                 Debug.Log("/n t0 /n");
                 break;
             case "Type1":
-                Time.timeScale = 0;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Fail");
+                //Time.timeScale = 0;
                 over = true;
                 Debug.Log("/n t1 /n");
                 break;
             case "Type2":
-                Time.timeScale = 0;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Fail");
+               // Time.timeScale = 0;
                 over = true;
                 Debug.Log("/n t2 /n");
                 break;
             case "Type3":
-                Time.timeScale = 0;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Fail");
+               // Time.timeScale = 0;
                 over = true;
                 Debug.Log("/n t3 /n");
                 break;
             case "Type4":
-                Time.timeScale = 0;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Fail");
+                //Time.timeScale = 0;
                 over = true;
                 Debug.Log("/n t4 /n");
                 break;
             case "Type5":
-                Time.timeScale = 0;
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Fail");
+               // Time.timeScale = 0;
                 over = true;
                 Debug.Log("/n t5 /n");
                 break;
         }
         //if (collider.name == "Quad1")
         //{
-           // Time.timeScale = 0;
-         //   over = true;
-       // }
+        // Time.timeScale = 0;
+        // over = true;
+        // }
     }
 
     void OnGUI()
     {
         if (over)
         {
-            GUI.Label(new Rect(Screen.width*0.3f,Screen.height*0.45f, Screen.width * 0.75f, Screen.height * 0.25f),"Game Over !", style2);
-            if(GUI.Button(new Rect(Screen.width * 0.48f, Screen.height * 0.55f, 50, 50f), img))
+            GUI.Label(new Rect(Screen.width * 0.3f, Screen.height * 0.45f, Screen.width * 0.75f, Screen.height * 0.25f), "Game Over !", style2);
+            if (GUI.Button(new Rect(Screen.width * 0.48f, Screen.height * 0.55f, 50, 50f), img))
             {
-                
+
                 UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
                 Time.timeScale = 1;
             }

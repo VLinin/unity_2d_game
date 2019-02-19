@@ -39,7 +39,8 @@ public class jump : MonoBehaviour
         }
         if (col.gameObject.name == "kamen")
         {
-            Time.timeScale = 0;
+
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Fail");
             over = true;
         }
 
